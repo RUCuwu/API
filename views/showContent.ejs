@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Content</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Your Random Content</h1>
+
+  <% if (contentType === 'text') { %>
+    <p><%= content.lipsum %></p>
+  <% } else if (contentType === 'image') { %>
+    <img src="<%= content.imageUrl %>" alt="Random Image" width="400">
+  <% } else if (contentType === 'gif') { %>
+    <img src="<%= content.gifUrl %>" alt="Random GIF" width="400">
+  <% } %>
+
+  <a href="/request-content">Go back</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Random Content</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Request Random Content</h1>
+  <form action="/generate-content" method="POST">
+    <label for="contentType">Select content type:</label>
+    <select name="contentType" id="contentType" required>
+      <option value="text">Random Text</option>
+      <option value="image">Random Image</option>
+      <option value="gif">Random GIF</option>
+    </select>
+    <button type="submit">Get Random Content</button>
+  </form>
+</body>
+</html>
